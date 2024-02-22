@@ -38,3 +38,13 @@ alter table project_worker
 alter table project_worker
     add constraint worker_fk
     foreign key(worker_id) references worker(id);
+
+-- create sequences
+create sequence client_seq start 1;
+create sequence worker_seq start 1;
+create sequence project_seq start 1;
+
+-- set sequences
+alter table client alter column id set default nextval('client_seq');
+alter table worker alter column id set default nextval('worker_seq');
+alter table project alter column id set default nextval('project_seq');

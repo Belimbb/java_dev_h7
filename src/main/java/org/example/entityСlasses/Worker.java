@@ -9,8 +9,7 @@ public class Worker {
     private String wlevel;
     private int salary;
 
-    public Worker(Long id, String name, Date birthday, String wlevel, int salary) {
-        this.id = id;
+    public Worker(String name, Date birthday, String wlevel, int salary) {
         this.name = name;
         this.birthday = birthday;
         this.wlevel = wlevel;

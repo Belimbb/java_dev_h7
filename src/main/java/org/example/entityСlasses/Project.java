@@ -11,8 +11,7 @@ public class Project {
     public Project() {
     }
 
-    public Project(Long id, Date start_date, Date finish_date) {
-        this.id = id;
+    public Project(Date start_date, Date finish_date) {
         this.start_date = start_date;
         this.finish_date = finish_date;
     }

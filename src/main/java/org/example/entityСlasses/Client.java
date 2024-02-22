@@ -7,8 +7,7 @@ public class Client {
     public Client() {
     }
 
-    public Client(Long id, String name) {
-        this.id = id;
+    public Client(String name) {
         this.name = name;
     }
 
